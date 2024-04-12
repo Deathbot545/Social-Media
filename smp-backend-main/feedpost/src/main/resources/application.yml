@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: posts
+  config:
+    import: optional:configserver:http://localhost:8888
+  data:
+    mongodb:
+      database: post_api_db
+      uri: mongodb+srv://admin:1hSBcmzIL9YI4iCr@smpdb.0uqjv6r.mongodb.net

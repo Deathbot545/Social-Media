@@ -1,0 +1,27 @@
+.modal-animation.close {
+  animation: modalClose 0.3s forwards;
+}
+
+.modal-animation.open {
+  animation: modalOpen 0.3s forwards;
+}
+
+@keyframes modalOpen {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes modalClose {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
